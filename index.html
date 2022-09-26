@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Coding Quiz</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div style="text-align: left" class="header1"><strong>View high score</strong></div>
+        <div style="text-align:right" class="header2"><strong>Time: </strong><span id="timer"></span></div>
+        </div>
+
+    </header>
+    <section class=section>
+        <h2 class=codeQuiz id="codeQuiz">Test your Javascript basics by hitting "Start Quiz" below!</h2>
+        <span id="instructions">♦ This quiz will last 75 seconds total.
+            <p>♦ Your score is dictated by your time remaining at the end of the quiz. </p>
+            <p>♦ 15 seconds (points) will be deducted for each wrong answer.</p>
+        </span>
+        <br>
+        <button id="startButton" class="myButton" class="hide">Start Quiz</button>
+    </section>
+    <section class=section>
+        <div id="question1" class="hide">
+            <h3>Inside which HTML element do we put the JavaScript?</h3>
+            <h4 value="incorrect">1) js</h4>
+            <h4 value="incorrect">2) javascript</h4>
+            <h4 value="correct">3) script</h4>
+            <h4 value="incorrect">4) scripting</h4>
+        </div>
+        <div id="question2" class="hide">
+            <h3>Which is the correct place to insert a Javascript?</h3>
+            <h4 value="incorrect">1) The < head> section</h4>
+            <h4 value="correct">2) Both the < head> and the < body> section</h4>
+            <h4 value="incorrect">3) The < body> section></h4>
+            <h4 value="incorrect">4) None of the above </h4>
+        </div>
+        <div id="question3" class="hide">
+            <h3>How to write an IF statement in JavaScript?</h3>
+            <h4 value="incorrect">1) if i = 5 </h4>
+            <h4 value="correct">2) if (i == 5) </h4>
+            <h4 value="incorrect">3) if i = 5 then </h4>
+            <h4 value="incorrect">4) if i == 5 then </h4>
+        </div>
+        <div id="question4" class="hide">
+            <h3>How do you write "Hello World" in an alert box?</h3>
+            <h4 value="incorrect">1) msg("Hello World") </h4>
+            <h4 value="correct">2) alert("Hello World")</h4>
+            <h4 value="incorrect">3) msgBox("Hello World")</h4>
+            <h4 value="incorrect">4) alertBox("Hello World")</h4>
+        </div>
+        <div id="question5" class="hide">
+            <h3>What is the correct way to write a JavaScript array?</h3>
+            <h4 value="incorrect">1) var colors = 1 = ("red"), 2 = ("green"), 3 = ("blue") </h4>
+            <h4 value="incorrect">2) var colors = (1:"red", 2:"green", 3:"blue")</h4>
+            <h4 value="correct">3) var colors = ["red", "green", "blue"] </h4>
+            <h4 value="incorrect">4) var colors = "red", "green", "blue"</h4>
+        </div>
+        <div id="correct"></div>
+        <form id="form" class="hide">
+            <h2><strong>Congratulations, you completed the quiz!</strong></h2>
+            <span id="score"></span><br>
+            <label for="initials"><strong>Enter Your Initials Here:</strong></label>
+            <input type="text" id="initials">
+            <a id="submit" href="./assets/css/highscore.html">
+                <div>Submit</div>
+            </a>
+        </form>
+    </section>
+    <script src="./assets/JS/script.js"></script>
+</body>
+
+</html>
